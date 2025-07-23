@@ -71,10 +71,16 @@ step 6
         )
         }
 
-        
-        
-        
-        
+
+
+
+<p dir="rtl" style="text-align: right;">🧹 7. توقف پروژه</p>
+
+<p dir="rtl" style="text-align: right;">برای توقف کانتینرها از:</p>
+
+bash
+docker-compose down
+     
         
         
         
