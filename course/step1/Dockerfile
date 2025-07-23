@@ -1,16 +1,13 @@
-FROM node:20-alpine
+      FROM node:20-alpine
 
-WORKDIR /app
+      WORKDIR /app
 
-# نصب vite project (تبدیل به پروژه کامل)
-RUN npm create vite@latest . -- --template react
+      COPY app .
+      RUN npm install
 
-# نصب dependencyها
-RUN npm install
+      EXPOSE 5173
 
-EXPOSE 5173
-
-CMD ["npm", "run", "dev", "--", "--host"]
+      CMD ["npm", "run", "dev", "--", "--host"]
 
 
 
