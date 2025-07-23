@@ -17,7 +17,6 @@ Dockerfile برای اجرای پروژه:
 
       WORKDIR /app
 
-      COPY app/ .
 
       RUN npm install
 
@@ -37,3 +36,10 @@ docker-compose.yml با volumes:
       - ./app:/app
       - /app/node_modules
       working_dir: /app
+
+
+# اولین اجرا (ساخت image و راه‌اندازی)
+docker-compose up --build
+
+# اجراهای بعدی (فقط راه‌اندازی)
+docker-compose up
