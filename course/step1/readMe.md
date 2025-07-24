@@ -24,8 +24,11 @@ in docker not need
         npm install
         npm run dev
 step 4 
-          
+   for first time
+
      docker-compose up --build
+
+docker-compose up 
 
 step 5
 
