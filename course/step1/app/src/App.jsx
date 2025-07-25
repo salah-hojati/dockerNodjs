@@ -6,6 +6,7 @@ import UserGreeting from "./UserGreeting.jsx";
 function App() {
     return (
         <>
+            <UserGreeting isLoggedIn={true} username="salah"/>
             <UserGreeting isLoggedIn={false} username="salah"/>
         </>
     );
